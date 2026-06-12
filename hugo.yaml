@@ -1,5 +1,5 @@
 # Configuration
-baseURL: "https://example.com/"
+baseURL: "/"
 title: "Anor Technologies Pte Ltd"
 
 enableRobotsTXT: true
@@ -22,13 +22,13 @@ languages:
   en:
     label: English
     weight: 1
-    title: Hextra
+    title:
   fa:
     label: فارسی
     locale: fa
     direction: rtl
     weight: 2
-    title: هگزترا
+    title: 
     params:
       banner:
         message: |
@@ -75,7 +75,7 @@ module:
     extended: true
     min: "0.146.0"
 
-  workspace: hugo.work
+  #workspace: hugo.work
   imports:
     - path: github.com/imfing/hextra
 
@@ -180,7 +180,7 @@ params:
   banner:
     key: 'announcement-v0.12'
     message: |
-      Anor Technology employees will never ask you to transfer money or disclose bank log-in details over a phone call.
+      Hextra **v0.12** is here! 🎉 Discover [what's new]({{% relref "blog/v0.12" %}})
 
   navbar:
     displayTitle: false
@@ -188,21 +188,19 @@ params:
     logo:
       path: images/logo.png
       dark: images/logo-dark.png
-      width: 102
-      height: 130
-      link: /
+       link: /
     width: wide
 
   theme:
-    # light | dark | system
+    light
     default: light
-    displayToggle: true
+    displayToggle: false
 
   footer:
     enable: true
     displayCopyright: true
     displayPoweredBy: false
-    width: full
+    width: wide
 
   # Display the last modification date
   displayUpdatedDate: true
@@ -214,7 +212,7 @@ params:
   # Search
   # flexsearch is enabled by default
   search:
-    enable: false
+    enable: true
     type: flexsearch
 
     flexsearch:
@@ -225,7 +223,7 @@ params:
       tokenize: forward
 
   editURL:
-    enable: false
+    enable: true
     base: "https://github.com/imfing/hextra/edit/main/docs/content"
 
   blog:
@@ -257,7 +255,7 @@ params:
 
   page:
     # full (100%), wide (90rem), normal (80rem)
-    width: wide
+    width: normal
     # tabs:
     #   sync: true
     contextMenu:

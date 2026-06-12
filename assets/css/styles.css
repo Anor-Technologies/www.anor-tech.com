@@ -28,15 +28,17 @@ body {
   --primary-hue: 212deg;
   --primary-saturation: 100%;
   --primary-lightness: 50%;
-  --hextra-navbar-height: 3.5rem;
-  --hextra-banner-height: 2rem;
-  --menu-height: 3.75rem; /* 60px */
+  --hextra-navbar-height: 100px;
+  --hextra-banner-height: 100px;
+  --menu-height: 100px; /* 60px */
+  --anortech-orange: #ED7123;
 }
 
 .dark {
   --primary-hue: 204deg;
   --primary-saturation: 100%;
   --primary-lightness: 50%;
+  --anortech-orange: #ED7123;
 }
 
 @utility hextra-focus {

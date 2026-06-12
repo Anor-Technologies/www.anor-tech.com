@@ -1,28 +1,32 @@
 ---
-title: Hextra Theme
+title: 
 layout: hextra-home
 ---
 
+<!--
 {{< hextra/hero-badge >}}
-  <div class="hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400"></div>
+<div class="hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400"></div>
   <span>Free, open source</span>
   {{< icon name="arrow-circle-right" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
+-->
 
 <div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-headline >}}
-  Build modern websites&nbsp;<br class="hx:sm:block hx:hidden" />with Markdown and Hugo
+SECURE . ACCELERATE . TRANSFORM
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="hx:mb-12">
 {{< hextra/hero-subtitle >}}
-  Fast, batteries-included Hugo theme&nbsp;<br class="hx:sm:block hx:hidden" />for creating beautiful static websites
+
+Anor Technologies is a Singapore-based deep-tech company that builds AI-driven data intelligence solutions. &nbsp;<br class="hx:sm:block hx:hidden" />We assist financial institutions and fintech companies navigate complexity; from compliance to growth — with data they can trust.
+
 {{< /hextra/hero-subtitle >}}
 </div>
 
 <div class="hx:mb-6">
-{{< hextra/hero-button text="Get Started" link="docs" >}}
+{{< hextra/hero-button text="What We Do" link="what-we-do" >}} {{< hextra/hero-button text="Case Study" link="case-study" >}} {{< hextra/hero-button text="Connect Now" link="connect-noq" >}}
 </div>
 
 <div class="hx:mt-6"></div>

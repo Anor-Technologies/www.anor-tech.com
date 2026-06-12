@@ -99,7 +99,7 @@ A simple hero container with an image on the left side.
 ### Usage
 
 ```
-{{</* hextra/hero-container image="images/logo.svg"  imageTitle="title" */>}}
+{{</* hextra/hero-container image="images/logo.png"  imageTitle="title" */>}}
     Content
 {{</* /hextra/hero-container */>}}
 ```

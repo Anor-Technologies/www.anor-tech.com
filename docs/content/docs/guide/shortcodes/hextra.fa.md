@@ -99,7 +99,7 @@ next: /docs/guide/deploy-site
 ### Usage
 
 ```
-{{</* hextra/hero-container image="images/logo.svg"  imageTitle="title" */>}}
+{{</* hextra/hero-container image="images/logo.png"  imageTitle="title" */>}}
     Content
 {{</* /hextra/hero-container */>}}
 ```
