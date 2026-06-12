@@ -1,5 +1,3 @@
-module github.com/Anor-Technologies/www.anor-tech.com
+module github.com/imfing/hextra
 
-go 1.25.5
-
-require github.com/imfing/hextra v0.12.3 // indirect
+go 1.21
