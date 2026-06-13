@@ -1,10 +1,10 @@
 # Configuration
-baseURL: "https://example.com/"
-title: "Anor Technologies Pte Ltd"
+baseURL: "/"
+title: "ANOR Technologies Pte Ltd"
 
-enableRobotsTXT: true
+enableRobotsTXT: false
 # Parse Git commit
-enableGitInfo: true
+enableGitInfo: false
 # enableEmoji: false
 hasCJKLanguage: true
 
@@ -22,47 +22,17 @@ languages:
   en:
     label: English
     weight: 1
-    title: Hextra
-  fa:
-    label: فارسی
-    locale: fa
-    direction: rtl
-    weight: 2
-    title: هگزترا
-    params:
-      banner:
-        message: |
-          هگزترا **v0.12** منتشر شد! 🎉 [تازه‌ها را ببینید]({{% relref "blog/v0.12" %}})
-      page:
-        contextMenu:
-          links:
-            - name: باز کردن در ChatGPT
-              icon: chatgpt
-              url: "https://chatgpt.com/?hints=search&q=%D8%AF%D8%A7%D8%B1%D9%85+%D8%A7%DB%8C%D9%86+%D9%85%D8%B3%D8%AA%D9%86%D8%AF%D8%A7%D8%AA+%D8%B1%D8%A7+%D9%85%DB%8C%E2%80%8C%D8%AE%D9%88%D8%A7%D9%86%D9%85%3A+{url}%0A%DA%A9%D9%85%DA%A9%D9%85+%DA%A9%D9%86+%D8%A8%D9%81%D9%87%D9%85%D9%85+%DA%86%D8%B7%D9%88%D8%B1+%D8%A7%D8%B2+%D8%A2%D9%86+%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87+%DA%A9%D9%86%D9%85."
-  ja:
-    label: 日本語
-    locale: ja-JP
-    weight: 3
-    title: Hextra
-    params:
-      banner:
-        message: |
-          Hextra **v0.12** がリリースされました！🎉 [新着情報はこちら]({{% relref "blog/v0.12" %}})
-      page:
-        contextMenu:
-          links:
-            - name: ChatGPTで開く
-              icon: chatgpt
-              url: "https://chatgpt.com/?hints=search&q=%E3%81%93%E3%81%AE%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A7%E3%81%84%E3%81%BE%E3%81%99%3A+{url}%0A%E4%BD%BF%E3%81%84%E6%96%B9%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B%E3%81%AE%E3%82%92%E6%89%8B%E4%BC%9D%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82"
+    title: ANOR Technologies
+  
   zh-cn:
-    label: 简体中文
+    label: 中文
     locale: zh-CN
     weight: 4
-    title: Hextra
+    title: ANOR 科技
     params:
       banner:
         message: |
-          Hextra **v0.12** 发布啦！🎉 查看[更新内容]({{% relref "blog/v0.12" %}})
+          Anor Technologies 的员工永远不会通过电话要求您转账或泄露银行登录信息。
       page:
         contextMenu:
           links:
@@ -96,91 +66,123 @@ enableInlineShortcodes: true
 
 menu:
   main:
-    - identifier: documentation
-      name: Documentation
-      pageRef: /docs
+    # WHO WE ARE
+    - identifier: who-we-are
+      name: Who We Are
       weight: 1
-    - identifier: versions
-      name: Versions
-      weight: 5
-    - identifier: blog
-      name: Blog
-      pageRef: /blog
-      weight: 2
-    - identifier: more
-      name: More
-      weight: 4
-    - identifier: showcase
-      name: Showcase
-      pageRef: /showcase
-      weight: 3
-      params:
-        type: link
-        icon: collection
-    - name: Search
-      weight: 6
-      params:
-        type: search
-    - name: GitHub
-      weight: 7
-      url: "https://github.com/imfing/hextra"
-      params:
-        icon: github
-    - identifier: development
-      name: Development ↗
-      url: https://imfing.github.io/hextra/versions/latest/
-      parent: versions
-      params:
-        type: link
-        icon: beaker
-    - identifier: v0.10
-      name: v0.10 ↗
-      url: https://imfing.github.io/hextra/versions/v0.10/
-      parent: versions
-    - identifier: v0.11
-      name: v0.11 ↗
-      url: https://imfing.github.io/hextra/versions/v0.11/
-      parent: versions
-    - identifier: about
-      name: About
-      pageRef: /about
-      parent: more
+
+    - identifier: about-anor-technologies
+      name: About Anor Technologies
+      pageRef: /who-we-are/about-anor-technologies
+      parent: who-we-are
       weight: 1
-    - identifier: archives
-      name: Archives
-      pageRef: /archives
-      parent: more
+
+    - identifier: our-mission-and-value
+      name: Our Mission and Value
+      pageRef: /who-we-are/our-mission-and-value
+      parent: who-we-are
       weight: 2
-    - identifier: glossary
-      name: Glossary
-      pageRef: /glossary
-      parent: more
+
+    - identifier: our-people
+      name: Our People
+      pageRef: /who-we-are/our-people
+      parent: who-we-are
       weight: 3
 
-  sidebar:
-    - identifier: more
-      name: More
-      params:
-        type: separator
-      weight: 1
-    - identifier: about
-      name: "About"
-      pageRef: "/about"
+    - identifier: our-culture
+      name: Our Culture
+      pageRef: /who-we-are/our-culture
+      parent: who-we-are
+      weight: 4
+
+
+    # WHAT WE DO
+    - identifier: what-we-do
+      name: What We Do
       weight: 2
-    - identifier: hugoDocs
-      name: "Hugo Docs ↗"
-      url: "https://gohugo.io/documentation/"
+
+    - identifier: cloud-security
+      name: Cloud Security
+      pageRef: /what-we-do/cloud-security
+      parent: what-we-do
+      weight: 1
+
+    - identifier: cloud-infrastructure
+      name: Cloud Infrastructure
+      pageRef: /what-we-do/cloud-infrastructure
+      parent: what-we-do
+      weight: 2
+
+    - identifier: ai-solutions
+      name: AI Solutions
+      pageRef: /what-we-do/ai-solutions
+      parent: what-we-do
       weight: 3
+
+    - identifier: cloudflare
+      name: Cloudflare Solutions
+      pageRef: /what-we-do/cloudflare
+      parent: what-we-do
+      weight: 4
+
+
+    # PROJECTS
+    - identifier: projects
+      name: Our Projects
+      weight: 3
+
+    - identifier: digital-transformation
+      name: Digital Transformation
+      pageRef: /projects/digital-transformation
+      parent: projects
+      weight: 1
+
+    - identifier: security-implementations
+      name: Security Implementations
+      pageRef: /projects/security-implementations
+      parent: projects
+      weight: 2
+
+
+    - identifier: e-services
+      name: E Services
+      pageRef: /e-services
+      weight: 4
+
+    # INSIGHTS / BLOG
+    - identifier: news-room
+      name: News Room
+      pageRef: /news-room
+      weight: 5
+
+    # JOIN US
+    - identifier: join-us
+      name: Join Us
+      pageRef: /join-us
+      weight: 6
+
+    # CONTACT
+    - identifier: contact
+      name: Contact Us
+      pageRef: /contact-us
+      weight: 7
+      
+          # CONTACT
+    - identifier: partner-program
+      name: Partner Program
+      pageRef: /partner-program
+      weight: 8
+      
 
 params:
-  description: Modern, responsive, batteries-included Hugo theme for creating beautiful static websites.
+  description: SECURE . ACCELERATE . TRANSFORM
 
   externalLinkDecoration: true
 
   banner:
     key: 'announcement-v0.12'
     message: |
-      Anor Technology employees will never ask you to transfer money or disclose bank log-in details over a phone call.
+      Anor Technologies employees will never ask you to transfer money or disclose bank log-in details over a phone call.
 
   navbar:
     displayTitle: false
@@ -196,17 +198,17 @@ params:
   theme:
     # light | dark | system
     default: light
-    displayToggle: true
+    displayToggle: false
 
   footer:
     enable: true
     displayCopyright: true
-    displayPoweredBy: false
+    displayPoweredBy: true
     width: full
 
   # Display the last modification date
-  displayUpdatedDate: true
-  dateFormat: "January 2, 2006"
+  displayUpdatedDate: false
+  dateFormat: "2 January, 2006"
 
   # Display the author name of the last modified date
   displayUpdatedAuthor: false
@@ -230,7 +232,7 @@ params:
 
   blog:
     list:
-      displayTags: true
+      displayTags: false
       # date | lastmod | publishDate | title | weight
       sortBy: date
       sortOrder: desc # or "asc"
@@ -247,11 +249,11 @@ params:
     dateFormat: "Jan 02"
 
   toc:
-    displayTags: true
+    displayTags: false
 
   highlight:
     copy:
-      enable: true
+      enable: fasle
       # hover | always
       display: hover
 
@@ -261,7 +263,7 @@ params:
     # tabs:
     #   sync: true
     contextMenu:
-      enable: true
+      enable: false
       links:
         - name: Open in ChatGPT
           icon: chatgpt
@@ -279,10 +281,10 @@ params:
 
     # https://giscus.app/
     giscus:
-      repo: imfing/hextra
-      repoId: R_kgDOJ9fJag
-      category: General
-      categoryId: DIC_kwDOJ9fJas4CY7gW
+      repo: 
+      repoId: 
+      category: 
+      categoryId: 
       # mapping: pathname
       # strict: 0
       # reactionsEnabled: 1

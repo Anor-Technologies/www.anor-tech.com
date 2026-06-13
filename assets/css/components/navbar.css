@@ -3,7 +3,6 @@
 ) {
   .hextra-nav-container-blur {
     @apply hx:bg-none;
-    background-color: var(--anortech-orange) !important;
   }
 }
 
